@@ -6,5 +6,5 @@ RUN addgroup -S sampleuser && adduser -S sampleuser --uid 1002 -G sampleuser
 WORKDIR /app/config
 COPY ./target/sample.jar /app/sample-SNAPSHOT.jar
 RUN chown sampleuser: -R /app
-USER sampeuser
+USER sampleuser
 CMD ["java","-jar","/app/sample-SNAPSHOT.jar"]
